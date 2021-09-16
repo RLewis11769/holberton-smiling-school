@@ -42,7 +42,6 @@ html {
 .btn, .btn:hover, .btn:focus {
 	background-color: var(--color-primary);
 	border-color: var(--color-primary);
-	filter: drop-shadow(0px 2px 20px rgba(0, 0, 0, 0.5));
 }
 
 .btn:hover, .btn:focus {
@@ -81,4 +80,8 @@ html {
 
 #company-name {
 	width: 10rem;
+}
+
+.dark {
+	background-color: var(--color-dark);
 }
