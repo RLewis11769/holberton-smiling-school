@@ -1,9 +1,27 @@
+/* NAVIGATION
+	1. Global
+		- Variables
+		- Font face
+		- Base
+	2. Layout
+		- Header
+		- Carousel
+*/
+
+/*** 1. GLOBAL ***/
+
+/* Variables
+   ============================= */
+
 :root {
 	--font-family: 'Source Sans Pro', sans-serif;
 	--color-white: #FFFFFF;
 	--color-dark: #071629;
 	--color-primary: #C271FF;
 }
+
+/* Font
+   ============================= */
 
 @font-face {
 	font-family: 'holberton_school-icon';
@@ -14,9 +32,35 @@
 	url('fonts/holberton_school-icon.svg') format('svg');
 }
 
+/* Base
+   ============================= */
+
 html {
 	font-family: var(--font-family);
 }
+
+.btn, .btn:hover, .btn:focus {
+	background-color: var(--color-primary);
+	border-color: var(--color-primary);
+	filter: drop-shadow(0px 2px 20px rgba(0, 0, 0, 0.5));
+}
+
+.btn:hover, .btn:focus {
+	opacity: 0.9;
+}
+
+.purple {
+	color: var(--color-primary);
+}
+
+.bg-purple {
+	background-color: var(--color-primary);
+}
+
+/*** 1. GLOBAL ***/
+
+/* Header
+   ============================= */
 
 .header {
 	background-image: url('images/pic_1.jpg');
@@ -37,31 +81,4 @@ html {
 
 #company-name {
 	width: 10rem;
-}
-
-.btn, .btn:hover, .btn:focus {
-	background-color: var(--color-primary);
-	border-color: var(--color-primary);
-}
-
-.btn:hover, .btn:focus {
-	opacity: 0.9;
-}
-
-.purple {
-	color: var(--color-primary);
-}
-
-.carousel-control-prev {
-	background-image: url('images/arrow_white_left.png');
-	background-repeat: no-repeat;
-}
-
-.carousel-control-next {
-	background-image: url('images/arrow_white_right.png');
-	background-repeat: no-repeat;
-}
-
-.bg-purple {
-	background-color: var(--color-primary);
 }
