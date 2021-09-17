@@ -4,8 +4,9 @@
 		- Font face
 		- Base
 	2. Layout
-		- Header
-		- Carousel
+		- Colors
+		- Backgrounds
+		- Glyphs
 */
 
 /*** 1. GLOBAL ***/
@@ -17,6 +18,7 @@
 	--font-family: 'Source Sans Pro', sans-serif;
 	--color-white: #FFFFFF;
 	--color-dark: #071629;
+	--color-gray: opacity(#071629, 0.5);
 	--color-primary: #C271FF;
 }
 
@@ -48,17 +50,9 @@ html {
 	opacity: 0.9;
 }
 
-.purple {
-	color: var(--color-primary);
-}
+/*** 2. LAYOUT ***/
 
-.bg-purple {
-	background-color: var(--color-primary);
-}
-
-/*** 1. GLOBAL ***/
-
-/* Header
+/* Backgrounds
    ============================= */
 
 .header {
@@ -68,11 +62,59 @@ html {
 	background-position: center top;
 }
 
+/* Colors
+   ============================= */
+
+.purple {
+	color: var(--color-primary);
+}
+
+.gray {
+	color: var(--color-gray);
+}
+
+.purple-bg {
+	background-color: var(--color-primary);
+}
+
+.dark-bg {
+	background-color: var(--color-dark);
+}
+
+/* Glyphs
+   ============================= */
+
+/* Navbar */
+
 .navbar-icon:before {
 	font-family: 'holberton_school-icon';
 	content: "\e911";
 	color: var(--color-white);
 }
+
+/* Footer */
+
+.fb-icon:before {
+	font-family: 'holberton_school-icon';
+	content: "\e908";
+	color: var(--color-white);
+}
+
+.twitter-icon:before {
+	font-family: 'holberton_school-icon';
+	content: "\e90f";
+	color: var(--color-white);
+}
+
+.insta-icon:before {
+	font-family: 'holberton_school-icon';
+	content: "\e90a";
+	color: var(--color-white);
+}
+
+
+
+
 
 #company-logo {
 	width: 1.75rem;
@@ -82,6 +124,6 @@ html {
 	width: 10rem;
 }
 
-.dark {
-	background-color: var(--color-dark);
-}
+
+
+
