@@ -15,9 +15,10 @@
    ============================= */
 
 :root {
-	--font-family: 'Source Sans Pro', sans-serif;
+	--font-family: 'Source Sans Pro', serif;
 	--color-white: #FFFFFF;
 	--color-dark: #071629;
+	--color-gray: #979797;
 	--color-primary: #C271FF;
 }
 
@@ -36,17 +37,44 @@
 /* Base
    ============================= */
 
-html {
-	font-family: var(--font-family);
+body {
+	font-family: var(--font-family) !important;
 }
 
+.off-screen {
+	left: -100vw;
+	position: absolute;
+}
+
+/* Buttons */
+
 .btn, .btn:hover, .btn:focus {
-	background-color: var(--color-primary);
-	border-color: var(--color-primary);
+	background-color: var(--color-primary) !important;
+	border-color: var(--color-primary) !important;
 }
 
 .btn:hover, .btn:focus {
 	opacity: 0.9;
+}
+
+.shadow-outline {
+	box-shadow: 0 0 10px 5px gray;
+}
+
+/* Navigation Links */
+
+li a:hover, li a:focus {
+	color: var(--color-primary) !important;
+}
+
+.link-active:after {
+	content: "";
+	display: block;
+	width: 75px;
+	height: 2px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: var(--color-white);
 }
 
 /*** 2. LAYOUT ***/
@@ -54,8 +82,15 @@ html {
 /* Backgrounds
    ============================= */
 
-.header {
+.homepage {
 	background-image: url('images/pic_1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center top;
+}
+
+.pricing {
+	background-image: url('images/pic_2.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center top;
@@ -64,16 +99,20 @@ html {
 /* Colors
    ============================= */
 
-.purple {
-	color: var(--color-primary);
-}
-
 .purple-bg {
-	background-color: var(--color-primary);
+	background-color: var(--color-primary) !important;
 }
 
 .dark-bg {
 	background-color: var(--color-dark);
+}
+
+.purple {
+	color: var(--color-primary);
+}
+
+.gray {
+	border-color: var(--color-gray) !important;
 }
 
 /* Glyphs
