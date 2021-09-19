@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<link rel="shortcut icon" href="./images/favicon.ico" type="image/favicon">
+	<title>Holberton SmilingSchool</title>
+	<meta name="description" content="Bootstrap is a free and open-source CSS framework">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+	<!-- Bootstrap v.4 -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="text-white">
+	<!-- Skip links -->
+	<nav aria-label="Skip links">
+		<ul class="off-screen">
+			<li>
+				<a href="#a11y-primary-nav" class="skip-link">Skip to primary navigation</a>
+			</li>
+			<li>
+				<a href="#a11y-main-content" class="skip-link">Skip to main content</a>
+			</li>
+		</ul>
+	</nav>
+
+	<!-- Header -->
+	<header class="courses container-fluid">
+		<div class="container-lg">
+			<!-- Navbar -->
+			<nav class="d-flex flex-column flex-sm-row py-4" id="a11y-primary-nav" tabindex="-1">
+				<!-- Brand -->
+				<div class="d-flex flex-column flex-sm-row col-sm-6 align-items-center">
+					<img class="m-2" src="images/smile_off.png" height="30px" width="40px" alt="">
+					<a href="homepage.html" aria-label="homepage">
+						<img class="m-2" src="images/logo.png" height="30px" width="115px" alt="">
+					</a>
+				</div>
+				<!-- Hamburger menu -->
+				<button class="navbar-toggler float-left position-absolute d-sm-none" type="button"
+					data-toggle="collapse" data-target="#navbarContent" aria-expanded="false"
+					aria-label="Toggle navigation menu">
+					<span class="navbar-icon"></span>
+				</button>
+				<!-- Menu -->
+				<div class="collapse navbar-collapse d-sm-flex col-sm-6" id="navbarContent">
+					<ul class="navbar-nav text-uppercase ml-auto flex-sm-row align-items-center font-weight-bold">
+						<li class="navbar-item link-active">
+							<a class="nav-link purple mx-5" href="#">Courses</a>
+						</li>
+						<li class="navbar-item">
+							<a class="nav-link text-white mx-5" href="pricing.html">Pricing</a>
+						</li>
+						<li class="navbar-item">
+							<a class="nav-link text-white mx-5" href="#">Login</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<!-- Hero/Banner section -->
+			<div class="position-relative pt-4 pb-5">
+				<h1 class="text-center font-weight-bold display-5">« Don’t cry because it’s over.
+					<br><span class="purple">Smile</span> because it happened. »
+				</h1>
+			</div>
+		</div>
+	</header>
+
+	<main id="a11y-main-content" tabindex="-1">
+		<!-- Form Section -->
+		<section class="container-fluid purple-bg">
+			<div class="container-lg">
+				<div class="row py-5 text-white">
+					<div class="col">
+						<div class="form-group">
+							<label for="topic">TOPIC</label>
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<div class="input-group-text">
+										<span class="search"></span>
+									</div>
+								</div>
+								<input type="text" class="form-control purple-bg" id="topic"
+									placeholder="Username">
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="form-group">
+							<label for="topic">TOPIC</label>
+							<select class="form-control opacity">
+								<option class="purple">Novice</option>
+								<option class="purple">Intermediate</option>
+							</select>
+						</div>
+					</div>
+					<div class="col">
+						<div class="form-group">
+							<label for="exampleFormControlSelect1">SORT BY</label>
+							<select class="form-control opacity">
+								<option>Most Popular</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>
