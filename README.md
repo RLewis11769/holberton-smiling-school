@@ -20,11 +20,11 @@ Full desktop and mobile examples for all 3 pages are shown here:
 
 A detailed look at the header, as seen on the homepage, is shown here:
 
-![Final result](https://github.com/RLewis11769/holberton-smiling-school/blob/main/usage/Header.jpg)
+![Final result](https://github.com/RLewis11769/holberton-smiling-school/blob/main/usage/Header.gif)
 
 A detailed look at the interactive form on the courses page, including the dropdown menu, is shown here:
 
-![Final result](https://github.com/RLewis11769/holberton-smiling-school/blob/main/usage/CoursesForm.jpg)
+![Final result](https://github.com/RLewis11769/holberton-smiling-school/blob/main/usage/CoursesForm.gif)
 
 ## Installation
 
