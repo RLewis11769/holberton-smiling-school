@@ -2,7 +2,7 @@
 
 ## Description
 
-This project implements a design from scratch using HTML and Bootstrap as much as possible. Additional personalized styling is added using pure CSS. This project duplicates the visual design of a fully functional website consisting of 3 pages that can be seen as 3 separate Figma designer files.
+This project implements a design from scratch using HTML and Bootstrap as much as possible. Additional customized styling is added using pure CSS. This project duplicates the visual design of a fully functional website consisting of 3 pages that can be seen as 3 separate Figma designer files.
 
 The Homepage is found [here](https://www.figma.com/file/QYQqMYbdpAHL5xTclwJKSI/Homepage?node-id=0%3A1).
 
@@ -14,13 +14,17 @@ Each page contains links to the other two pages via a working navigation bar.
 
 ## Examples
 
-Full desktop, tablet, and mobile examples for all 3 pages are shown here:
+Full desktop and mobile examples for all 3 pages are shown here:
 
 ![Final result](https://github.com/RLewis11769/holberton-smiling-school/blob/main/usage/Overview.jpg)
 
-The design of most sections is visible in the images previusly provided. However, a detailed look at the interactive dropdown menu on the Courses is shown here:
+A detailed look at the header, as seen on the homepage, is shown here:
 
-![Final result](https://github.com/RLewis11769/holberton-smiling-school/blob/main/usage/CoursesDropdown.jpg)
+![Final result](https://github.com/RLewis11769/holberton-smiling-school/blob/main/usage/Header.jpg)
+
+A detailed look at the interactive form on the courses page, including the dropdown menu, is shown here:
+
+![Final result](https://github.com/RLewis11769/holberton-smiling-school/blob/main/usage/CoursesForm.jpg)
 
 ## Installation
 
@@ -28,7 +32,7 @@ The design of most sections is visible in the images previusly provided. However
 Clone the repository into your system with the command:
 
 ```
-git@github.com:RLewis11769/holberton-headphones.git
+git@github.com:RLewis11769/holberton-smiling-school.git
 ```
 
 ### 2. Open
@@ -41,7 +45,7 @@ Holberton SmilingSchool is now ready to view. See below for details.
 
 ### CSS
 
-#### Styling Unavailable via Bootstrap
+#### Custom Styling
 - All pages use the same CSS file that contains as little CSS as possible
     - File:
         - styles.css
@@ -50,104 +54,109 @@ Holberton SmilingSchool is now ready to view. See below for details.
 
 #### 0. Create the header/hero
 - Navigation menu with hamburger icon and banner including "awards" section
-	- Files:
+	- File:
 		- 0-homepage.html
 
 #### 1. Create the "carousel of quotes" section
 - Simple single-item carousel with horizontal card
-	- Files:
+	- File:
 		- 1-homepage.html
 
 #### 2. Create the "most popular tutorials" section
 - Multi-item carousel with different number of cards based on size
-	- Files:
+	- File:
 		- 2-homepage.html
 
 #### 3. Create the "free membership" section
 - Similar to "awards" section in header/hero but with different number of columns on tablet and mobile
-	- Files:
+	- File:
 		- 3-homepage.html
 
 #### 4. Create the "latest videos" section
 - Copy and modify existing "most popular tutorials" section
-	- Files:
+	- File:
 		- 4-homepage.html
 
 #### 5. Create footer
 - Complete the homepage page
-	- Files:
+	- File:
 		- homepage.html
 
 ### Pricing
 
-#### 0. Create the header/hero
+#### 6. Create the header/hero
 - Copy and modify navigation menu with hamburger icon and banner from homepage, not including "awards" section
-	- Files:
+	- File:
 		- 0-pricing.html
 
-#### 1. Create "prices grid" section
+#### 7. Create "prices grid" section
 - 3 columns regardless of row width
-	- Files:
+	- File:
 		- 1-pricing.html
 
-#### 2. Create "carousel of quotes" section
+#### 8. Create "carousel of quotes" section
 - Copy "carousel of quotes" from homepage
-	- Files:
+	- File:
 		- 2-pricing.html
 
-#### 3. Create "FAQ grid" section
+#### 9. Create "FAQ grid" section
 - Similar to "awards section" in header/hero with simple cards
-	- Files:
+	- File:
 		- 3-pricing.html
 
-#### 4. Create footer
+#### 10. Create footer
 - Complete the pricing page
-	- Files:
+	- File:
 		- pricing.html
 
 ### Courses
 
-#### 0. Create the header/hero
+#### 11. Create the header/hero
 - Copy and modify navigation menu with hamburger icon and banner from homepage, not including "awards" section
-	- Files:
+	- File:
 		- 0-courses.html
 
-#### 1. Create "search filters" section
+#### 12. Create "search filters" section
 - Simple dropdown as stand-in for filters
     - No need for dynamic values - only static content
-	- Files:
+	- File:
 		- 1-courses.html
 
-#### 2. Create "result" section
+#### 13. Create "result" section
 - Grid that works no matter the number of cards
     - Test with odd and even number of cards
-	- Files:
+	- File:
 		- 2-courses.html
 
-#### Create footer
+#### 14. Create footer
 - Complete the courses page
-	- Files:
+	- File:
 		- courses.html
 
 ## Project Rules
 
 - You won’t have a lot of instruction, so you are free to implement it the way that you want. The objective is simple: Create a fully functional web page that looks the same as the designer file.
-- Your styles.css must be as small as you can. You must use Bootstrap classes as much as you can
+- Your styles.css must be as small as you can. You must use Bootstrap classes as much as you can.
 
 ## Project Advice
 
 - You will need: JQuery, Bootstrap CSS/JSS (links/scripts provided)
-- If your computer has missing fonts, you can find them here: [source-sans-pro](https://www.fontsquirrel.com/fonts/source-sans-pro) and [Spin-Cycle-OT](https://www.fontsquirrel.com/fonts/Spin-Cycle-OT)
+- If your computer has missing fonts, you can find it here: [source-sans-pro](https://www.fontsquirrel.com/fonts/source-sans-pro)
+- Images and holberton_school-icon font are included in zip found [here](https://intranet.hbtn.io/projects/1687)
 
 ## Features
 
-- 
+- Pricing and courses pages include link back to homepage.
 - An attempt was made at accessability. No Axe issues except "Elements must have sufficient color contrast" which is a design element I have no control over.
 - I personally think it's very cleanly written and laid out :)
 
 ## Bugs
 
-- 
+- These pages ideally look best at 1440px, 768px, and 375px as shown in the Figma designer file.
+- Text size is not responsive.
+- The background of headers does not match for homepage or pricing pages on mobile view.
+- "Most popular tutorials" and "Latest tutorials" carousels are not multi-item carousels. They are single-item carousels with 2 cards each.
+- Styling on "Most popular tutorials" and "Latest tutorials" carousels is a little off, most notably the "play" overlay and previous/next arrows.
 
 ## Credit
 
