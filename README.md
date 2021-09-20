@@ -157,6 +157,7 @@ Holberton SmilingSchool is now ready to view. See below for details.
 - The background of headers does not match for homepage or pricing pages on mobile view.
 - "Most popular tutorials" and "Latest tutorials" carousels are not multi-item carousels. They are single-item carousels with 2 cards each.
 - Styling on "Most popular tutorials" and "Latest tutorials" carousels is a little off, most notably the "play" overlay and previous/next arrows.
+- The form on the courses page is a little off, most notably the search bar, especially the magnifying glass icon.
 
 ## Credit
 
