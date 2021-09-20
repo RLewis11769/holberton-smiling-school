@@ -4,7 +4,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-	<title>Holberton - Web Stack - Bootstrap</title>
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/favicon">
+	<title>Holberton SmilingSchool</title>
 	<meta name="description" content="Bootstrap is a free and open-source CSS framework">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link
@@ -19,25 +20,35 @@
 </head>
 
 <body class="text-white">
+	<!-- Skip links -->
+	<nav aria-label="Skip links">
+		<ul class="off-screen">
+			<li>
+				<a href="#a11y-primary-nav" class="skip-link">Skip to primary navigation</a>
+			</li>
+			<li>
+				<a href="#a11y-main-content" class="skip-link">Skip to main content</a>
+			</li>
+		</ul>
+	</nav>
 
 	<!-- Header -->
-	<div class="header container-fluid">
+	<header class="homepage container-fluid">
 		<div class="container-lg">
 			<!-- Navbar -->
-			<nav class="d-flex flex-column flex-sm-row pt-4">
+			<nav class="d-flex flex-column flex-sm-row pt-4" id="a11y-primary-nav" tabindex="-1">
 				<!-- Brand -->
 				<div class="d-flex flex-column flex-sm-row col-sm-6 align-items-center">
-					<img class="my-2 mx-3" src="images/smile_off.png" height="30px" width="40px" alt="">
-					<img class="my-2 mx-3" src="images/logo.png" height="30px" width="115px" alt="">
+					<img class="m-2" src="images/smile_off.png" height="30px" width="40px" alt="">
+					<img class="m-2" src="images/logo.png" height="30px" width="115px" alt="">
 				</div>
 				<!-- Hamburger menu -->
-				<button class="navbar-toggler float-left position-absolute d-sm-none" type="button" data-toggle="collapse"
-					data-target="#navbarContent" aria-expanded="false" aria-label="Toggle navigation menu">
+				<button class="navbar-toggler float-left position-absolute d-sm-none" type="button" data-toggle="collapse" data-target="#navbarContent" aria-expanded="false" aria-label="Toggle navigation menu">
 					<span class="navbar-icon"></span>
 				</button>
 				<!-- Menu -->
 				<div class="collapse navbar-collapse d-sm-flex col-sm-6" id="navbarContent">
-					<ul class="navbar-nav text-uppercase ml-auto flex-sm-row align-items-center">
+					<ul class="navbar-nav text-uppercase ml-auto flex-sm-row align-items-center font-weight-bold">
 						<li class="navbar-item">
 							<a class="nav-link text-white mx-5" href="courses.html">Courses</a>
 						</li>
@@ -60,11 +71,8 @@
 							<p class="text-uppercase font-weight-bold mr-5 ml-2">Grin</p>
 							<p class="text-uppercase font-weight-bold mr-5 ml-2">Laugh</p>
 						</div>
-						<button class="btn btn-secondary shadow rounded-pill text-uppercase px-4 py-2 m-3"
-							href="#">Register
-							for free</button>
-						<h2 class="font-weight-light mt-5 pt-5"><span class="font-weight-bold purple">Learn</span> from
-							the pros</h2>
+						<button class="btn btn-secondary rounded-pill text-uppercase font-weight-bold btn-shadow px-4 py-2 m-3" href="#">Register for free</button>
+						<h2 class="font-weight-light mt-5 pt-5"><span class="font-weight-bold purple">Learn</span> from the pros</h2>
 					</div>
 				</div>
 			</div>
@@ -100,15 +108,20 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</header>
+
+	<main id="a11y-main-content" tabindex="-1">
+
+	</main>
 
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
 		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-		crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
 		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
 		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+		crossorigin="anonymous"></script>
 </body>
+
 </html>
